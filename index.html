@@ -652,6 +652,26 @@
       letter-spacing: 0.1em;
       margin-bottom: 8px;
     }
+    .location__map {
+      margin-top: 40px;
+    }
+    .location__map iframe {
+      display: block;
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--border);
+      filter: grayscale(0.5) brightness(0.85) contrast(1.05);
+    }
+    .location__map-link {
+      margin-top: 14px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+    }
+    .location__map-link a {
+      color: var(--accent-gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
     .location__card__desc {
       font-size: 0.77rem;
       color: var(--text-muted);
@@ -1255,6 +1275,21 @@
           <span class="lang-en">Dining &amp; Shopping<br>Perfect for strolling</span>
         </p>
       </div>
+    </div>
+
+    <div class="location__map fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.6018442069444!2d134.6998237262604!3d34.84133607891871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355520002837b71f%3A0xb85ed0f02cfd0d54!2z44CSNjcwLTAwMDgg5YW15bqr55yM5aer6Lev5biC5qmL5LmL55S677yS77yU!5e0!3m2!1sja!2sjp!4v1724580715251!5m2!1sja!2sjp"
+        title="侘寂の地図 / Map"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <p class="location__map-link">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%85%B5%E5%BA%AB%E7%9C%8C%E5%A7%AB%E8%B7%AF%E5%B8%82%E6%A9%8B%E4%B9%8B%E7%94%BA22" target="_blank" rel="noopener">
+          <span class="lang-ja">Googleマップで開く</span>
+          <span class="lang-en">Open in Google Maps</span>
+        </a>
+      </p>
     </div>
   </div>
 </section>
