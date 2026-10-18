@@ -268,13 +268,15 @@
       display: inline-block;
       padding: 9px 22px;
       border: 1px solid var(--accent-gold);
-      color: var(--accent-gold);
+      background: var(--accent-gold);
+      color: var(--bg);
       font-size: 0.76rem;
       letter-spacing: 0.14em;
       transition: background 0.2s, color 0.2s;
     }
     .site-header__cta:hover {
-      background: var(--accent-gold);
+      background: #d4b46e;
+      border-color: #d4b46e;
       color: var(--bg);
     }
 
@@ -723,6 +725,15 @@
       padding: 80px 0;
       text-align: center;
     }
+    .amenities__block {
+      margin-bottom: 72px;
+    }
+    .amenities__cta {
+      margin-top: 56px;
+    }
+    .amenities__cta .btn {
+      min-width: min(100%, 360px);
+    }
     .amenities__list {
       display: flex;
       flex-wrap: wrap;
@@ -750,7 +761,7 @@
       max-width: 640px;
       margin: 56px auto 0;
       border: 1px solid var(--border-gold);
-      padding: 60px 52px;
+      padding: 36px 52px 60px;
       position: relative;
       background: var(--bg-card);
     }
@@ -772,13 +783,21 @@
       font-size: clamp(2.4rem, 5vw, 3.6rem);
       font-weight: 300;
       color: var(--text-main);
-      margin-bottom: 6px;
+      line-height: 1.3;
+      margin-bottom: 0;
       letter-spacing: 0.02em;
     }
     .pricing__note {
       font-size: 0.72rem;
-      color: var(--text-muted);
+      color: var(--accent-gold);
       letter-spacing: 0.12em;
+      margin-bottom: 14px;
+    }
+    .pricing__times {
+      font-size: 0.72rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.12em;
+      line-height: 1.9;
       margin-bottom: 40px;
     }
     .pricing__list {
@@ -931,7 +950,7 @@
       .location__cards { grid-template-columns: 1fr; }
       .coffee-collab__inner { flex-direction: column; gap: 28px; }
       .site-header__nav { display: none; }
-      .pricing__card { padding: 48px 28px; }
+      .pricing__card { padding: 32px 28px 48px; }
     }
     @media (max-width: 640px) {
       .container, .gallery__header { padding: 0 20px; }
@@ -1216,6 +1235,124 @@
 
 
 <!-- ===================================================
+     AMENITIES（Memory）
+=================================================== -->
+<section class="amenities" id="amenities">
+  <div class="container">
+    <div class="amenities__block">
+      <span class="section-label fade-up">ROOM FACILITIES</span>
+      <h2 class="section-title fade-up">
+        <span class="lang-ja">部屋設備</span>
+        <span class="lang-en">Room Facilities</span>
+      </h2>
+      <div class="amenities__list fade-up">
+        <span class="amenities__item">Wi-Fi</span>
+        <span class="amenities__item">
+          <span class="lang-ja">テレビ</span>
+          <span class="lang-en">TV</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">エアコン</span>
+          <span class="lang-en">Air Conditioner</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">冷蔵庫</span>
+          <span class="lang-en">Refrigerator</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">湯沸かし器</span>
+          <span class="lang-en">Water Kettle</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">アイスペール</span>
+          <span class="lang-en">Ice Bucket</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">コーヒーカップ</span>
+          <span class="lang-en">Coffee Cups</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">グラス</span>
+          <span class="lang-en">Glasses</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">湯のみ</span>
+          <span class="lang-en">Japanese Tea Cups</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">スプーン</span>
+          <span class="lang-en">Spoons</span>
+        </span>
+        <span class="amenities__item">
+          <span class="lang-ja">ドライヤー</span>
+          <span class="lang-en">Hair Dryer</span>
+        </span>
+      </div>
+    </div>
+
+    <span class="section-label fade-up">AMENITIES</span>
+    <h2 class="section-title fade-up">
+      <span class="lang-ja">アメニティ</span>
+      <span class="lang-en">Amenities</span>
+    </h2>
+    <div class="amenities__list fade-up">
+      <span class="amenities__item">
+        <span class="lang-ja">シャンプー</span>
+        <span class="lang-en">Shampoo</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">コンディショナー</span>
+        <span class="lang-en">Conditioner</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">ボディソープ</span>
+        <span class="lang-en">Body Soap</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">バスタオル</span>
+        <span class="lang-en">Bath Towel</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">ハンドタオル</span>
+        <span class="lang-en">Hand Towel</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">歯磨きセット</span>
+        <span class="lang-en">Toothbrush Set</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">洗顔フォーム</span>
+        <span class="lang-en">Facial Cleansing Foam</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">クレンジング</span>
+        <span class="lang-en">Makeup Remover</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">化粧水</span>
+        <span class="lang-en">Lotion</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">乳液</span>
+        <span class="lang-en">Milky Lotion</span>
+      </span>
+      <span class="amenities__item">
+        <span class="lang-ja">耳栓</span>
+        <span class="lang-en">Earplugs</span>
+      </span>
+    </div>
+
+    <div class="amenities__cta fade-up">
+      <a href="https://reserve.489ban.net/client/wabisabi-himeji/0/plan/id/191130/stay" class="btn btn--primary btn--large">
+        <span class="lang-ja">公式サイトで空き確認・ご予約</span>
+        <span class="lang-en">Check Availability / Book Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
      LOCATION（M: Memory）
 =================================================== -->
 <section class="location" id="location">
@@ -1332,55 +1469,6 @@
 
 
 <!-- ===================================================
-     AMENITIES（Memory）
-=================================================== -->
-<section class="amenities" id="amenities">
-  <div class="container">
-    <span class="section-label fade-up">AMENITIES</span>
-    <h2 class="section-title fade-up">
-      <span class="lang-ja">含まれるアメニティ</span>
-      <span class="lang-en">Amenities</span>
-    </h2>
-    <div class="amenities__list fade-up">
-      <span class="amenities__item">
-        <span class="lang-ja">専用 檜浴室（バスタブ付）</span>
-        <span class="lang-en">Private Hinoki Bath</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">Align Coffee Roaster ドリップコーヒー</span>
-        <span class="lang-en">Align Coffee Drip Bag</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">日本茶・抹茶パック</span>
-        <span class="lang-en">Green Tea &amp; Matcha</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">クッキー</span>
-        <span class="lang-en">Cookies</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">バスタオル・フェイスタオル</span>
-        <span class="lang-en">Towels</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">浴衣・スリッパ</span>
-        <span class="lang-en">Yukata &amp; Slippers</span>
-      </span>
-      <span class="amenities__item">
-        <span class="lang-ja">ドライヤー</span>
-        <span class="lang-en">Hair Dryer</span>
-      </span>
-      <span class="amenities__item">Wi-Fi</span>
-      <span class="amenities__item">
-        <span class="lang-ja">2階 勾配天井の客室</span>
-        <span class="lang-en">2nd Floor Beam Retreat</span>
-      </span>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================================================
      PRICING（M → A）
 =================================================== -->
 <section class="pricing" id="pricing">
@@ -1396,33 +1484,8 @@
       <p class="pricing__price">¥28,600 〜</p>
       <p class="pricing__note lang-ja">1室あたり / 1泊 素泊まり（2名様利用）</p>
       <p class="pricing__note lang-en">Per room / 1 night, room only (for 2 guests)</p>
-
-      <ul class="pricing__list">
-        <li>
-          <span class="lang-ja">福の間（2階特別室）専用空間</span>
-          <span class="lang-en">Fukunoma Private Room (2F)</span>
-        </li>
-        <li>
-          <span class="lang-ja">専用 檜浴室（バスタブ付き）</span>
-          <span class="lang-en">Private Hinoki Bath</span>
-        </li>
-        <li>
-          <span class="lang-ja">Align Coffee Roaster ドリップコーヒー</span>
-          <span class="lang-en">Align Coffee Drip Bag</span>
-        </li>
-        <li>
-          <span class="lang-ja">日本茶・抹茶パック・クッキー</span>
-          <span class="lang-en">Green Tea &amp; Cookies</span>
-        </li>
-        <li>
-          <span class="lang-ja">アメニティ一式（浴衣・タオル等）</span>
-          <span class="lang-en">Full Set of Amenities</span>
-        </li>
-        <li>
-          <span class="lang-ja">姫路城下町 古民家体験</span>
-          <span class="lang-en">Historic Machiya Experience</span>
-        </li>
-      </ul>
+      <p class="pricing__times lang-ja">チェックイン／15：00～19：00（セルフチェックイン）<br>チェックアウト／11：00</p>
+      <p class="pricing__times lang-en">Check-in: 15:00–19:00 (self check-in)<br>Check-out: 11:00</p>
 
       <a href="https://reserve.489ban.net/client/wabisabi-himeji/0/plan/id/191130/stay" class="btn btn--primary" style="width: 100%; margin-bottom: 12px;">
         <span class="lang-ja">公式サイトで空き確認・ご予約</span>
